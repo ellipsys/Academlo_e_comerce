@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academlo Store</title>
+    <link rel="Academlo icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body >
+    <nav id="banner" class="navBar">
+        <div  class="head">
+            <div class="logoAcademlo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="load__gif">
+                    <title>Academlo Logo</title>
+                    <g>
+                        <g>
+                            <path
+                                d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z">
+                            </path>
+                            <path
+                                d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                <p>STORE</p>
+            </div>
+            <div  class="menuCart cartHidden">
+                <div class="close_cart">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+                
+                <div id="cartContain" class="carShop">
+                    
+                    
+                </div>
+                <div class="totalShop">
+                    <div class="itemsShop">
+                        <p>items: 0</p>
+                        <p>$0.0</p>
+                    </div>
+                    <div class="buttonPay">
+                        <a class="checkout">Checkout</a>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+            <div class="showTransition menuMain">
+                <ul>
+                    <li><a class = "hidden_main" href="#">HOME</a></li>
+                    <li><a class = "hidden_main" href="#products">PRODUCTS</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    
+        <div class="icons">
+                <i class="fa-solid fa-cart-shopping icon_cart"> <span class="counter_items"><div>0</div></span></i>
+                <i class="fa-solid fa-moon icon_dark_Mode"></i> 
+                <i class="fa-solid fa-table-cells-large menu_Grid"></i>
+        </div>
+    </nav>
+    <div class="container">
+        
+        <div class="banner">
+            <img src="./images/featured2.png" alt="featured2">
+            <div class="descriptionSite">
+                <h1>
+                    New Sweatshirt
+                    <br>
+                    COLLECTIONS 2022
+                </h1>
+                <p>
+                    Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern
+                    design.
+                </p>
+                <h3>
+                    $14.00
+                </h3>
+                <div class="buttons">
+                    <a id="discover" href="#products">Discover</a><a id="add" href="#">ADD TO CART</a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div id="products" class="optionsMenu">
+            <div class="all listProduct borderProduct">
+                <p>Show All</p>
+                <p>show all products</p>
+            </div>
+            <div class="hoddies listProduct borderProduct">
+                <p>Hoodies</p>
+                <p>3 products</p>
+            </div>
+            <div class="shirts listProduct borderProduct">
+                <p>Shirts</p>
+                <p>4 products</p>
+            </div>
+            <div class="sweetshirts listProduct">
+                <p>Sweatshirts</p>
+                <p>4 products</p>
+            </div>
+            <div class="sweetshirts listProduct">
+                <p>Mugs</p>
+                <p>4 products</p>
+            </div>
+            <div class="sweetshirts listProduct">
+                <p>Stickers</p>
+                <p>4 products</p>
+            </div>
+        </div>
+        <div id="imagesProducts" class="images">
+            
+        </div>
+        <footer class="foot">
+            <div class="ourInfo prettyFoot">
+                <p class="p_Margin">
+                    Our information
+                </p>
+                <li><a href="">Bogotá-Colombia</a></li>
+            </div>
+            <div class="aboutUs prettyFoot">
+                <p class="p_Margin">
+                    About Us
+                </p>
+                <li><a href="#">Support Center</a></li>
+                <li><a href="#">Customer Support</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Copy Right</a></li>
+            </div>
+            <div class="product prettyFoot">
+                <p class="p_Margin">
+                    Product
+                </p>
+                <li><a href="#">Hoodies</a></li>
+                <li><a href="#">Shirts</a></li>
+                <li><a href="#">Sweetshirts</a></li>
+            </div>
+            <div class="social ">
+                <p class="p_Margin">
+                    Social
+                </p>
+                <div class="social_Network">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://kit.fontawesome.com/27a8077929.js" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+</html>
