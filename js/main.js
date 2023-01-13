@@ -135,7 +135,7 @@ const checkout = document.querySelector(".itemsShop")
 //scroll
 
 const btn_check = document.querySelector(".checkout");
-
+const filtro_producto = document.querySelector(".listProduct");
 
 if(localStorage.getItem("DarkMode")=="true"){
   iconDarkMode.classList.add("fa-sun");
@@ -432,4 +432,7 @@ btn_check.addEventListener("click",function (e) {
   
 })
 
+filtro_producto.addEventListener("click",function (e) {
+  console.log(e.target);
+})
 counter_item_cart(car)
