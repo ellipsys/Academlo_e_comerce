@@ -313,6 +313,25 @@ a:hover{
 
 
 }
+
+.coder {
+
+    display: flex;
+    max-width: 1040px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .coder > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .coder > img:hover{
+    scale: 1.2;
+    transition: scale 0.5;
+  }
+
 /*
 .image > img:hover{
     transform: translateY(-7px);
@@ -498,6 +517,24 @@ a:hover{
     background-color: var(--background-main-ligth-product);
     transition: 0.5s;
 }
+
+.coder {
+
+    display: flex;
+    max-width: 1040px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .coder > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .coder > img:hover{
+    scale: 1.2;
+    transition: scale 0.5;
+  }
 
 @media (min-width: 800px){
 
