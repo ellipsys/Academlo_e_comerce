@@ -76,7 +76,7 @@ const products = [
     name: 'tshirt',
     price: 24.00,
     image: './images/featured10.png',
-    category: 'tshirt',
+    category: 'shirts',
     stock: 20
   },
   {
@@ -92,7 +92,7 @@ const products = [
     name: 'tshirt',
     price: 24.00,
     image: './images/featured12.png',
-    category: 'tshirt',
+    category: 'shirts',
     stock: 20
   }
   ,
@@ -135,7 +135,8 @@ const checkout = document.querySelector(".itemsShop")
 //scroll
 
 const btn_check = document.querySelector(".checkout");
-const filtro_producto = document.querySelector(".listProduct");
+const filtro_producto = document.querySelector(".optionsMenu");
+const container_image = document.querySelector(".images");
 
 if(localStorage.getItem("DarkMode")=="true"){
   iconDarkMode.classList.add("fa-sun");
@@ -264,10 +265,10 @@ function showCar() {
 }
 showCar();
 
-function carro() {
+function product(array_products) {
   let html = ""
   //console.log(products);
-  products.forEach(({id,name,price,image,category,stock})=>{
+  array_products.forEach(({id,name,price,image,category,stock})=>{
     //console.log(name);
     html+=`
     <div class="image" >
@@ -288,7 +289,7 @@ function carro() {
   //console.log(html);
 }
 
-carro();
+product(products);
 
 function counter_item_cart(cart) {
   let html = ""
@@ -433,6 +434,41 @@ btn_check.addEventListener("click",function (e) {
 })
 
 filtro_producto.addEventListener("click",function (e) {
-  console.log(e.target);
+  let html = "";
+  if(e.target.parentElement.classList.contains("listProduct")){
+    if(e.target.parentElement.classList.contains("hoddies")){
+      let newArray = products.filter(function (e) {
+        return e.category === "hoodies"
+      });
+      product(newArray);
+    }
+    else if(e.target.parentElement.classList.contains("shirts")){
+      let newArray = products.filter(function (e) {
+        return e.category === "shirts"
+      });
+      product(newArray);
+    }
+    else if(e.target.parentElement.classList.contains("sweetshirts")){
+      let newArray = products.filter(function (e) {
+        return e.category === "sweatshirts"
+      });
+      product(newArray);
+    } 
+    else if(e.target.parentElement.classList.contains("all")){
+      product(products)
+    }
+    else if(e.target.parentElement.classList.contains("mugs")){
+      let newArray = products.filter(function (e) {
+        return e.category === "mugs"
+      });
+      product(newArray);
+    } 
+    else {
+      let newArray = products.filter(function (e) {
+        return e.category === "stickers"
+      });
+      product(newArray);
+    }
+  }
 })
 counter_item_cart(car)

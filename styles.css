@@ -592,6 +592,7 @@ a:hover{
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
     .menuCart{
         width: 100%;
@@ -620,7 +621,10 @@ a:hover{
     width: 80%;
     height: inherit;
     position:static;
-}
+    }
+    .image{
+        width: 200px;
+    }
 
 }
 
