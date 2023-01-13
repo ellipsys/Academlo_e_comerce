@@ -95,6 +95,15 @@ const products = [
     category: 'tshirt',
     stock: 20
   }
+  ,
+  {
+    id: 13,
+    name: 'Other',
+    price: 800.00,
+    image: './images/featured13.png',
+    category: 'other',
+    stock: 4
+  }
 ];
 
 let car = JSON.parse(localStorage.getItem("Cart")) || [];
